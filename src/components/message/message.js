@@ -1,5 +1,5 @@
-import Vue from "vue";
-import messageComp from "./message.vue";
+import Vue from 'vue';
+import messageComp from './message.vue';
 let MessageConstructor = Vue.extend(messageComp);
 const Message = options => {
   let instance = new MessageConstructor({
@@ -7,11 +7,12 @@ const Message = options => {
   });
   instance.$mount();
   document.body.appendChild(instance.$el);
+  instance.visible = true;
 };
-["success", "error", "warning"].forEach(type => {
+['success', 'error', 'warning'].forEach(type => {
   Message[type] = function(options) {
     options.type = type;
     return Message(options);
   };
 });
-export default Message;
+export { Message };

@@ -1,13 +1,13 @@
-import vue from "vue";
+import vue from 'vue';
 // 这里就是我们刚刚创建的那个静态组件
-import toastComponent from "./Toast.vue";
+import toastComponent from './Toast.vue';
 // 返回一个 扩展实例构造器, 关于 vue.extend 有不懂的同学,可以去查看以下官方文档 https://cn.vuejs.org/v2/api/#Vue-extend
 const ToastConstructor = vue.extend(toastComponent);
 // 定义弹出组件的函数 接收2个参数, 要显示的文本 和 显示时间
 function showToast(text, duration = 2000) {
   // 实例化一个 toast.vue
   const toastDom = new ToastConstructor({
-    el: document.createElement("div"),
+    el: document.createElement('div'),
     data() {
       return {
         text: text,

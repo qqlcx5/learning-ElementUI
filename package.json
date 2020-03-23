@@ -36,13 +36,20 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/prettier"
+      "eslint:recommended"
+      
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "warn",
+      "no-alert": "warn",
+      "no-multi-spaces": "warn",
+      "no-irregular-whitespace": "warn",
+      "no-trailing-spaces": "warn",
+      "comma-spacing": "warn"
+    }
   },
   "browserslist": [
     "> 1%",

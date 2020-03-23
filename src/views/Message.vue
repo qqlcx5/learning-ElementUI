@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import Message from "../components/message/message";
+import { Message } from '../components/message/message';
 export default {
   data() {
     return {};
@@ -12,8 +12,10 @@ export default {
   methods: {
     handleShow() {
       // console.log("messagemessagemessage");
-
-      Message.success({ message: "handleShow message message message" });
+      Message({
+        type: 'success',
+        message: 'handleShow message message message'
+      });
     }
   }
 };
