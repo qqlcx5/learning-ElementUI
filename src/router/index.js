@@ -21,6 +21,12 @@ const routes = [
     name: 'Message',
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/Message.vue')
+  },
+  {
+    path: '/input',
+    name: 'Input',
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/Input.vue')
   }
 ];
 
