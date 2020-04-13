@@ -13,17 +13,16 @@
     />
     <!-- <slot name='suffix' /> -->
     <!-- native 给原生绑定事件 不加给组件绑定事件 -->
-    <div
+    <!-- <div
       class="clearable"
       v-if="clearable"
       @click="$emit('input', '')"
       @mousedown.prevent
     >
       X
-    </div>
-    <div class="showPassword" v-if="showPassword" @click="changeStatus">
-      show
-    </div>
+    </div> -->
+    <lcx-icon class="clearable" icon="huaban8" v-if="clearable" @click.native="$emit('input', '')" @mousedown.native.prevent />
+    <lcx-icon class="showPassword" icon="huaban1" v-if="showPassword" @click.native="changeStatus" />
   </div>
 </template>
 
@@ -134,13 +133,18 @@ export default {
   .clearable {
     position: absolute;
     right: 14.5px;
-    top: 10px;
+    top: 12px;
+    font-size: 12px;
     cursor: pointer;
+    // ::v-deep .icon{
+    //   width: 10px;
+    //   height: 10px;
+    // }
   }
   .showPassword {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 10px;
+    top: 12px;
     cursor: pointer;
   }
 }
