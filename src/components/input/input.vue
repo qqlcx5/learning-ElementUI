@@ -21,8 +21,8 @@
     >
       X
     </div> -->
-    <lcx-icon class="clearable" icon="huaban8" v-if="clearable" @click.native="$emit('input', '')" @mousedown.native.prevent />
-    <lcx-icon class="showPassword" icon="huaban1" v-if="showPassword" @click.native="changeStatus" />
+    <lcx-icon class="clearable" icon="icon-guanbi" v-if="clearable" @click.native="$emit('input', '')" @mousedown.native.prevent />
+    <lcx-icon class="showPassword" icon="icon-icon-test" v-if="showPassword" @click.native="changeStatus" />
   </div>
 </template>
 
@@ -133,18 +133,15 @@ export default {
   .clearable {
     position: absolute;
     right: 14.5px;
-    top: 12px;
+    top: 15px;
     font-size: 12px;
     cursor: pointer;
-    // ::v-deep .icon{
-    //   width: 10px;
-    //   height: 10px;
-    // }
   }
   .showPassword {
     position: absolute;
     right: 10px;
     top: 12px;
+    font-size: 16px;
     cursor: pointer;
   }
 }

@@ -1,8 +1,9 @@
 <template>
-  <div class="bg">
+  <div>
     <lcx-input v-model="input" clearable></lcx-input>
     <lcx-input v-model="input" :disabled="true"></lcx-input>
     <lcx-input v-model="input" show-password></lcx-input>
+    <br>
     {{ input }}
   </div>
 </template>
@@ -23,14 +24,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.bg {
-  font-size: 30px;
-  &::v-deep .icon{
 
-  // width: 15px;
-  // height: 30px;
-  // transform:scaleX(1.5);
-  color: #000;
-  }
-}
 </style>
