@@ -1,9 +1,7 @@
 <template>
-  <div>
-      <svg class="icon" aria-hidden="true" :class="svgClass" >
-        <use :xlink:href="`#${icon}`" ></use>
-      </svg>
-  </div>
+  <svg class="icon" aria-hidden="true" :class="svgClass">
+    <use :xlink:href="`#${icon}`"></use>
+  </svg>
 </template>
 <script>
 export default {
@@ -13,10 +11,10 @@ export default {
       type: String,
       required: true
     },
-    svgClass:{
+    svgClass: {
       type: String
     }
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>
