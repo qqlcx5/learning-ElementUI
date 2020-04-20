@@ -122,9 +122,6 @@ export default {
 .arrow {
   &::before {
     position: absolute;
-    // top: -19px;
-    // left: 50%;
-    // transform: translate(-50%);
     display: block;
     content: '';
     width: 0;
