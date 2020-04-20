@@ -10,7 +10,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'default',
+      default: '',
       validator(type) {
         if (
           type &&
@@ -19,7 +19,7 @@ export default {
           // eslint-disable-next-line no-console
           console.error(
             'type类型必须为其中一种' +
-              ['default', 'primary', 'info', 'danger', 'warning'].join('、')
+              ['primary', 'success', 'info', 'danger', 'warning'].join('、')
           );
           return false;
         }

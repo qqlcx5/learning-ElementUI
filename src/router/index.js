@@ -33,6 +33,12 @@ const routes = [
     name: 'Input',
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/Input.vue')
+  },
+  {
+    path: '/popover',
+    name: 'Popover',
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/Popover.vue')
   }
 ];
 
