@@ -14,31 +14,31 @@ const routes = [
     path: '/toast',
     name: 'Toast',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Toast.vue')
+      import(/* webpackChunkName: "toast" */ '../views/Toast.vue')
   },
   {
     path: '/button',
     name: 'Button',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Button.vue')
+      import(/* webpackChunkName: "button" */ '../views/Button.vue')
   },
   {
     path: '/message',
     name: 'Message',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Message.vue')
+      import(/* webpackChunkName: "message" */ '../views/Message.vue')
   },
   {
     path: '/input',
     name: 'Input',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Input.vue')
+      import(/* webpackChunkName: "input" */ '../views/Input.vue')
   },
   {
     path: '/popover',
     name: 'Popover',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Popover.vue')
+      import(/* webpackChunkName: "popover" */ '../views/Popover.vue')
   }
 ];
 
