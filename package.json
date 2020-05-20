@@ -44,7 +44,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-console": "warn",
+      "no-console": "off",
       "no-alert": "warn",
       "no-multi-spaces": "warn",
       "no-irregular-whitespace": "warn",

@@ -39,6 +39,12 @@ const routes = [
     name: 'Popover',
     component: () =>
       import(/* webpackChunkName: "popover" */ '../views/Popover.vue')
+  },
+  {
+    path: '/autocomplete',
+    name: 'Autocomplete',
+    component: () =>
+      import(/* webpackChunkName: "popover" */ '../views/Autocomplete.vue')
   }
 ];
 
