@@ -14,22 +14,22 @@ export default {
       validator(type) {
         if (
           type &&
-          !['primary', 'success', 'info', 'danger', 'warning'].includes(type)
+          !['primary', 'success', 'info', 'danger', 'warning', 'default'].includes(type)
         ) {
           // eslint-disable-next-line no-console
           console.error(
             'type类型必须为其中一种' +
-              ['primary', 'success', 'info', 'danger', 'warning'].join('、')
+              ['primary', 'success', 'info', 'danger', 'warning', 'default'].join('、')
           );
           return false;
         }
         return true;
-      }
+      },
     },
     icon: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   computed: {
     btnClass() {
@@ -38,8 +38,8 @@ export default {
         classes.push(`lcx-button-${this.type}`);
       }
       return classes;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
